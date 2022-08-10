@@ -1,0 +1,14 @@
+* Indigoviolet Tap
+
+** How do I install these formulae?
+=brew install indigoviolet/tap/<formula>=
+
+Or =brew tap indigoviolet/tap= and then =brew install <formula>=.
+
+** Documentation
+=brew help=, =man brew= or check [[https://docs.brew.sh][Homebrew's
+documentation]].
+
+** Formula cookbook
+
+See https://docs.brew.sh/Formula-Cookbook
