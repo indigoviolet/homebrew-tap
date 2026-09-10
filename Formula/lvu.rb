@@ -1,4 +1,4 @@
-# lvu 0.1.6, rendered by packaging/homebrew/render-formula.sh from the
+# lvu 0.1.7, rendered by packaging/homebrew/render-formula.sh from the
 # release's SHA256SUMS. Edit packaging/homebrew/lvu.rb.in in the lvu repository
 # and re-render; hand edits here are lost on the next release.
 #
@@ -28,16 +28,12 @@ class Lvu < Formula
 
   on_macos do
     on_arm do
-      # Built on a GitHub macos-15 runner and never run on a Mac. The archive
-      # is unsigned and unnotarized; Homebrew installs from its own download,
-      # so no Gatekeeper quarantine attribute is set.
-      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.6/lvu-0.1.6-aarch64-apple-darwin.tar.gz"
-      sha256 "19b6ebbdcc8de941aee6a18a8b8b970049bb19a3833f99a7d4590706a252f278"
-    end
-    on_intel do
-      # Also built on a macos-15 runner (cross-compiled or native) and untested.
-      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.6/lvu-0.1.6-x86_64-apple-darwin.tar.gz"
-      sha256 "7a34e2aef62746d46b55fd3ef761d17cce3b541ba692d2c0f63156b1e17f0f23"
+      # Built and executed on a native GitHub macos-15 runner (stage.sh
+      # verification); the archive is unsigned and unnotarized, and human
+      # terminal acceptance is pending. Homebrew installs from its own
+      # download, so no Gatekeeper quarantine attribute is set.
+      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.7/lvu-0.1.7-aarch64-apple-darwin.tar.gz"
+      sha256 "e2bbfbe787a2b191ddeea81be4f6a3b9d95ef57c1537c81864eb0461e5c4fe76"
     end
   end
 
@@ -47,12 +43,12 @@ class Lvu < Formula
     # the build runner's glibc and refuse to start on anything older. See
     # docs/distribution.md.
     on_arm do
-      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.6/lvu-0.1.6-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f5ec621ff880ca538c30f517655d4fe01726125a8dae6cafdbe47321f6e17034"
+      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.7/lvu-0.1.7-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "e20a9f1546698e6ac976e904f7dfd9ab394ca2e520e993c06bcb07912384fb5e"
     end
     on_intel do
-      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.6/lvu-0.1.6-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "efc28fe5a2046d98997a9e9531761719dec0df579d7d78674422282f96baad59"
+      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.7/lvu-0.1.7-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "7cc709dcda9c029a6ffcda1cfc2e2df371126b0f90f49e5e53f000bf025792c3"
     end
   end
 
