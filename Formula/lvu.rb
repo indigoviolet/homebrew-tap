@@ -1,4 +1,4 @@
-# lvu 0.1.12, rendered by packaging/homebrew/render-formula.sh from the
+# lvu 0.1.13, rendered by packaging/homebrew/render-formula.sh from the
 # release's SHA256SUMS. Edit packaging/homebrew/lvu.rb.in in the lvu repository
 # and re-render; hand edits here are lost on the next release.
 #
@@ -32,8 +32,8 @@ class Lvu < Formula
       # verification); the archive is unsigned and unnotarized, and human
       # terminal acceptance is pending. Homebrew installs from its own
       # download, so no Gatekeeper quarantine attribute is set.
-      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.12/lvu-0.1.12-aarch64-apple-darwin.tar.gz"
-      sha256 "49dbfaa2d431dc8e7ccf43ec2ad0e5494334966563f755e8c15d570013b491d6"
+      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.13/lvu-0.1.13-aarch64-apple-darwin.tar.gz"
+      sha256 "3aa7d1cec2c610f45fceada5624f99128f77fe9bc2e3d2faf853984feadb793a"
     end
   end
 
@@ -43,12 +43,12 @@ class Lvu < Formula
     # the build runner's glibc and refuse to start on anything older. See
     # docs/distribution.md.
     on_arm do
-      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.12/lvu-0.1.12-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "332bba4a2e4891aa0e346c493f202ea2e002dc25508e876366f87a75f002997c"
+      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.13/lvu-0.1.13-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "3fa303a456699e97e74a41ec4f89553e197838dc432b95ea3e4a866bd667104a"
     end
     on_intel do
-      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.12/lvu-0.1.12-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "afba196ebba337e54419f00596d07e130341988d0560e141e49bdf501fe89cd5"
+      url "https://github.com/indigoviolet/lvu/releases/download/v0.1.13/lvu-0.1.13-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "903a656f179a47fe2d7d37e78df2dfaabc3a180bdd4d6a4187c1ccb573d0904e"
     end
   end
 
